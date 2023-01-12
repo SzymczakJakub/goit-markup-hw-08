@@ -38,3 +38,20 @@
   .section {
     padding: 94px 0;
   }
+
+  @media (min-width: 480px){
+    .container{width:480px}
+    .articles{
+      flex-direction: column;
+      &__svg-lorem{
+        width:450px;
+      }
+      &__topic{
+        text-align: center;
+      }
+      &__paragraph{
+        width: 450px;
+      }
+    }
+
+  }
