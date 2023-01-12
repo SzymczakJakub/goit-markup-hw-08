@@ -1,0 +1,45 @@
+.jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   margin-top: -94px;
+    
+    &__name {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  &__picture {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+  &__position-relative {
+    position: relative;
+  }
+  
+  &__position-relative > .jobs__aplications {
+    position: absolute;
+    top: 224px;
+  }
+  
+  &__aplications {
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+  }
+  }
+  

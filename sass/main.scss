@@ -1,0 +1,40 @@
+@import "utils/variables";
+@import "components/articles";
+@import "components/clients";
+@import "components/ending";
+@import "components/filter";
+@import "components/header";
+@import "components/is-hidden";
+@import "components/logo";
+@import "components/modal";
+@import "components/page-theme";
+@import "components/portfolio";
+@import "components/privacy";
+@import "components/secondary";
+@import "components/team";
+
+
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+  body {
+    color: var(--black);
+    font-family: $fontMain;
+    
+  }
+  .section {
+    padding: 94px 0;
+  }

@@ -1,0 +1,152 @@
+.ending {
+    background-color: $backgroundFooter;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    line-height: normal;
+    display: flex;
+    
+    &__localization {
+    color: $white;
+    text-decoration: none;
+    font-style: normal;
+  }
+  
+  
+  &__links {
+    padding-top: 20px;
+    
+    & a {
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+  }
+  &__contacts-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    & a {
+    color: $lightGrey;
+  }
+  & a:hover,
+  & a:focus {
+    color: $blue;
+  }
+  }
+  &__footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  
+  &__join-us {
+    margin-top: 12px;
+    
+    & h3 {
+    color: $white;
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  }
+  
+  &__join-us-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  &__divs {
+    display: flex;
+    gap: 70px;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+  
+  &__list-element {
+    background-color: $social-links-footer;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+  &:focus {
+    background-color: $blue;
+    cursor: pointer;
+  }
+  }
+  
+  &__label-footer {
+    color: $white;
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  
+  &__newsletter{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-right: 0;
+    vertical-align: center;
+    color: $lightGrey;
+  }
+  &__newsletter-flex {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  &__join-us-button {
+    width: 200px;
+    height: 50px;
+    background: $blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: $white;
+    border: none;
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+    padding-left: 42px;
+    
+    &:hover {
+    cursor: pointer;
+  }
+  }
+  
+  &__send {
+    fill: $white;
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  

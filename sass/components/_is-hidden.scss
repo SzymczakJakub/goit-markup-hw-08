@@ -1,0 +1,14 @@
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms 250ms ease-in-out,
+      visibility 250ms 250ms ease-in-out;
+
+      & .modal__box {
+        transform: translateY(-150%);
+      }
+  }
+  
+  
+  

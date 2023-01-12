@@ -1,0 +1,91 @@
+.team {
+  background-color: $iconsLorembg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  & figure {
+    background-color: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0;
+  }
+
+  &__pictures {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+
+    & figure {
+      font-size: 0;
+    }
+  }
+  &__head {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 42px;
+  }
+  &__figcaption {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  &__upper-text {
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+  &__lower-text {
+    font-family: $fontMain;
+    font-size: 16px;
+    font-weight: 400;
+    color: $grey;
+    letter-spacing: 0.03em;
+    line-height: 19px;
+  }
+  &__list-links {
+    display: flex;
+    gap: 10px;
+    margin-left: 32px;
+    margin-top: 16px;
+  }
+  &__social-links {
+    background-color: $white;
+    fill: $socialLinks;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: $blue;
+      cursor: pointer;
+    }
+  }
+  &__link-face:focus > .item-social {
+    fill: $white;
+    background-color: $blue;
+    border-radius: 50%;
+  }
+  &__item-social {
+    fill: $socialLinks;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      fill: $white;
+    }
+    &--white {
+      vertical-align: middle;
+      fill: $white;
+    }
+  }
+}

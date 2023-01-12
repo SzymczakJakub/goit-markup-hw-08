@@ -1,0 +1,29 @@
+.articles {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    
+    &__svg-lorem {
+    background-color: $iconsLorembg;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &__topic{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0, 03em;
+    justify-content: center;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  &__paragraph {
+    font-family: $fontMain;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0, 03em;
+    color: $grey;
+    line-height: 24px;
+  }
+  }
+  
