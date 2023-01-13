@@ -10,7 +10,7 @@
 @import "components/page-theme";
 @import "components/portfolio";
 @import "components/privacy";
-@import "components/secondary";
+@import "components/jobs";
 @import "components/team";
 
 
@@ -39,8 +39,35 @@
     padding: 94px 0;
   }
 
-  @media (min-width: 480px){
-    .container{width:480px}
+  @media (min-width: 480px) and (max-width:760px) {
+   .section{
+    padding: 60px 0;
+   }
+   .container {
+    width: 480px;
+  }
+  .header{
+    &__wrapper{
+      padding:0;
+      margin:0 0 0 15px;
+    }
+    &__list{
+      position: absolute;
+      visibility: hidden;
+    }
+    &__contacts{
+      position: absolute;
+      visibility: hidden;
+    }
+  }
+    .page-theme{
+      &__topic{margin:0 auto;
+        text-align: center;
+        font-size: 26px;
+        line-height: 42px;
+        width:365px;
+      }
+    }
     .articles{
       flex-direction: column;
       &__svg-lorem{
@@ -53,5 +80,23 @@
         width: 450px;
       }
     }
+    .jobs{
+      position: absolute;
+      visibility: hidden;
+    }
+.team{
+  &__pictures{
+    flex-direction: column;
+  }
+
+  &__list-links{
+    width: 206px;
+    margin: 0 auto;
+  }
+  &__photo{
+    width:450px;
+    height:460px;
+  }
+}
 
   }
