@@ -60,6 +60,7 @@
     }
     &__list{
       position: absolute;
+      left:20%;
       visibility: hidden;
     }
     &__contacts{
@@ -126,6 +127,28 @@
     width: 100%;
   }
 }
+.filter{
+  flex-wrap: wrap;
+  margin-right:73px ;
+  justify-content: left;
+}
+.portfolio{padding:0;
+  &__element{width: 100%;
+    
+  }
+  &__technocrack-container{
+    width: 100%;
+    height: 294px;
+  }
+  &__technocrack{
+    height: 100%;
+    padding: 77px 24px;
+  }
+  &__image{
+    width: 100%;
+  }
+}
+
 .ending{
   &__divs{
     flex-direction: column;
@@ -149,7 +172,7 @@
     flex-direction: column;
   }
   &__newsletter{
-    width: 50%;
+    width: 100%;
     
   }
 }
