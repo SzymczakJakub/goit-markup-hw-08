@@ -371,9 +371,19 @@ body {
     &__icon{
       width: 100%;
     }
-  
   }
-.ending{;
+  .portfolio{
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    &__element{
+      width: 46%
+    }
+
+  }
+.ending{
+  &__footer{
+    text-align: center;
+  }
   &__divs{
     flex-wrap: wrap;
     justify-content: space-around;
@@ -389,8 +399,23 @@ body {
   &__newsletter{
     width: 100%;
   }
+  &__join-us{
+    text-align: center;
+  }
 }
 .mobile{
   display: none;
 }
+}
+
+@media (min-width:1200px){
+  .menu-toggle{
+    display: none;
+  }
+  .header{
+    &__display{
+      display: flex;
+      gap:345px;
+    }
+  }
 }
