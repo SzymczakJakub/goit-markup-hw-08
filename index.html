@@ -19,54 +19,62 @@
   <body>
     <header class="header">
       <div class="container header__wrapper">
-        <nav class="header__nav">
-          <a class="logo" href="./index.html"
-            >Web<span class="logo__studio logo__studio--black">Studio</span></a
+        <a class="logo" href="./index.html"
+          >Web<span class="logo__studio logo__studio--black">Studio</span></a
+        >
+        <div class="header__button">
+          <button
+            type="button"
+            class="menu-toggle"
+            js-open-menu
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
-<div class="header__button" >
-  <button type="button" class="menu-toggle" js-open-menu
-  aria-expanded="false"
-  aria-controls="mobile-menu">
-  <svg class="header__hamburger"  width="24" height="24">
-<use href="./images/icons.svg#icon-menu"></use>
-  </svg>
-</button>
-</div>
-         
-          <ul class="header__list">
-            <li>
-              <a class="header__active" style="color: #2196f3" href="index.html"
-                >Agencja</a
-              >
-            </li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
-        </nav>
-        
-        <div class="header__contacts">
-          <a href="mailto:info@devstudio.com">
-            <svg class="header__icon" 1056 34 width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
+            <svg class="header__hamburger" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
             </svg>
-            info@devstudio.com</a
-          >
-          <a href="tel:+48111111111">
-            <svg class="header__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111</a
-          >
+          </button>
         </div>
-      
+        <div class="header__display">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li>
+                <a
+                  class="header__active"
+                  style="color: #2196f3"
+                  href="index.html"
+                  >Agencja</a
+                >
+              </li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__contacts">
+            <a href="mailto:info@devstudio.com">
+              <svg class="header__icon" 1056 34 width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+            <a href="tel:+48111111111">
+              <svg class="header__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </div>
+        </div>
       </div>
-      
     </header>
 
     <main>
       <section class="section page-theme">
         <div class="container">
-          <h1 class="page-theme__topic">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <h1 class="page-theme__topic">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
 
           <button class="page-theme__button" type="button" data-modal-open>
             Zamów usługę
@@ -77,7 +85,7 @@
         <div class="container">
           <ul class="articles">
             <li class="articles__list">
-              <svg class="articles__svg-lorem " width="270" height="120">
+              <svg class="articles__svg-lorem" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-antenna-1"
                   widht="70"
@@ -94,7 +102,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="articles__list">
               <svg class="articles__svg-lorem" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-clock-1"
@@ -113,7 +121,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="articles__list">
               <svg class="articles__svg-lorem" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-diagram-1"
@@ -132,7 +140,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="articles__list">
               <svg class="articles__svg-lorem" width="270" height="120">
                 <use
                   href="./images/icons.svg#icon-astronaut-1"
@@ -191,9 +199,10 @@
         <div class="container">
           <h2 class="team__head">Nasz zespół</h2>
           <ul class="team__pictures">
-            <li>
+            <li class="team__list">
               <figure>
-                <img class="team__photo"
+                <img
+                  class="team__photo"
                   src="images/john-doe.jpg"
                   alt="mężczyzna w koszulce bordo i okularach"
                   width="270"
@@ -259,9 +268,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure >
-                <img class="team__photo"
+            <li class="team__list">
+              <figure>
+                <img
+                  class="team__photo"
                   src="images/blonde.jpg"
                   alt="blondynka w żakiecie i okularach"
                   width="270"
@@ -327,9 +337,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="team__list">
               <figure>
-                <img class="team__photo"
+                <img
+                  class="team__photo"
                   src="images/without-glasses.jpg"
                   alt="mężczyzna w niebieskiej koszuli"
                   width="270"
@@ -395,9 +406,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="team__list">
               <figure>
-                <img class="team__photo"
+                <img
+                  class="team__photo"
                   src="images/black-tshirt.jpg"
                   alt="męzczyzna w czarnej koszulce i okularach"
                   width="270"
@@ -583,7 +595,11 @@
           <ul class="ending__join-us-links">
             <li tabindex="0" class="ending__list-element">
               <a tabindex="-1" href="#" target="_blank"></a>
-              <svg class="team__item-social team__item-social--white" width="44" height="44">
+              <svg
+                class="team__item-social team__item-social--white"
+                width="44"
+                height="44"
+              >
                 <use
                   href="./images/icons.svg#icon-instagram"
                   x="12"
@@ -595,7 +611,11 @@
             </li>
             <li tabindex="0" class="ending__list-element">
               <a tabindex="-1" href="#" target="_blank"></a>
-              <svg class="team__item-social team__item-social--white" width="44" height="44">
+              <svg
+                class="team__item-social team__item-social--white"
+                width="44"
+                height="44"
+              >
                 <use
                   href="./images/icons.svg#icon-twitter"
                   x="12"
@@ -607,7 +627,11 @@
             </li>
             <li tabindex="0" class="ending__list-element">
               <a tabindex="-1" href="#" target="_blank"></a>
-              <svg class="team__item-social team__item-social--white" width="44" height="44">
+              <svg
+                class="team__item-social team__item-social--white"
+                width="44"
+                height="44"
+              >
                 <use
                   href="./images/icons.svg#icon-facebook"
                   x="12"
@@ -619,7 +643,11 @@
             </li>
             <li tabindex="0" class="ending__list-element">
               <a tabindex="-1" href="#" target="_blank"></a>
-              <svg class="team__item-social team__item-social--white" width="44" height="44">
+              <svg
+                class="team__item-social team__item-social--white"
+                width="44"
+                height="44"
+              >
                 <use
                   href="./images/icons.svg#icon-linkedin2"
                   x="12"
@@ -641,7 +669,7 @@
               class="ending__newsletter"
               type="email"
               name="email"
-              placeholder="E-mail"
+              placeholder="Email"
             />
             <button class="ending__join-us-button" type="submit">
               Zapisz się
@@ -671,7 +699,12 @@
             <div class="modal__input-name">
               <label for="phone" class="modal__label-name">Telefon </label>
               <div class="modal__icon-position">
-                <input id="phone" type="tel" class="modal__input" name="phone" />
+                <input
+                  id="phone"
+                  type="tel"
+                  class="modal__input"
+                  name="phone"
+                />
                 <svg class="modal__svg" width="12px" height="12px">
                   <use href="./images/icons.svg#icon-Vector1"></use>
                 </svg>
@@ -703,38 +736,57 @@
                 ></textarea>
               </div>
             </div>
-           
-              <label id="check" class="privacy">
-                <input class="privacy__hidden-checkbox" for="check" type="checkbox" />
-                <div class="privacy__custom-checkbox">
-                  <svg class="privacy__custom-checkbox-img" width="16px" height="15px">
-                    <use href="./images/icons.svg#icon-Vector3" width="11px" height="8px" x="3" y="3"></use>
-                  </svg>
-                </div>
-                <span>
-                  Oświadczam iż akceptuję
-                  <a href="#">Regulamin</a> i
-                  <a href="#">Politykę Prywatności.</a></span
+
+            <label id="check" class="privacy">
+              <input
+                class="privacy__hidden-checkbox"
+                for="check"
+                type="checkbox"
+              />
+              <div class="privacy__custom-checkbox">
+                <svg
+                  class="privacy__custom-checkbox-img"
+                  width="16px"
+                  height="15px"
                 >
-              </label>
-              <button class="privacy__button" type="submit">Wyślij</button>
-            
+                  <use
+                    href="./images/icons.svg#icon-Vector3"
+                    width="11px"
+                    height="8px"
+                    x="3"
+                    y="3"
+                  ></use>
+                </svg>
+              </div>
+              <span>
+                Oświadczam iż akceptuję
+                <a href="#">Regulamin</a> i
+                <a href="#">Politykę Prywatności.</a></span
+              >
+            </label>
+            <button class="privacy__button" type="submit">Wyślij</button>
           </div>
         </form>
         <button type="button" class="modal__close" data-modal-close>X</button>
       </div>
     </div>
-    <div class="mobile container js-menu-container" >
-      <button type="button" class="mobile__close js-close-menu" >X</button>
+    <div class="mobile container js-menu-container">
+      <button type="button" class="mobile__close js-close-menu">X</button>
       <ul class="mobile__nav">
-      <li><a class="mobile__links" href="index.html"> Agencja</a></li>
-      <li><a class="mobile__links" href="portfolio.html"> Portfolio</a></li>
-      <li><a class="mobile__links" href="#"> Kontakt</a></li>
-    </ul>
-    <ul class="mobile__contacts">
-      <li><a class="mobile__phone-number" href="tel:+48111111111"> +48 111 111 111</a></li>
+        <li><a class="mobile__links" href="index.html"> Agencja</a></li>
+        <li><a class="mobile__links" href="portfolio.html"> Portfolio</a></li>
+        <li><a class="mobile__links" href="#"> Kontakt</a></li>
+      </ul>
+      <ul class="mobile__contacts">
         <li>
-          <a class="mobile__mail"  href="mailto:info@devstudio.com"> info@devstudio.com</a>
+          <a class="mobile__phone-number" href="tel:+48111111111">
+            +48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a class="mobile__mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
         </li>
       </ul>
       <ul class="mobile__socials">
@@ -743,9 +795,8 @@
         <li><a class="mobile__social" href="#"></a>Facebook</li>
         <li><a class="mobile__social" href="#"></a>Linkedin</li>
       </ul>
-      </div>
-   
     </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

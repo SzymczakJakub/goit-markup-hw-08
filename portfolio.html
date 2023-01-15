@@ -19,39 +19,54 @@
   <body>
     <header class="header">
       <div class="container header__wrapper">
-        <nav class="header__nav">
-          <a class="logo" href="./index.html"
-            >Web<span class="logo__studio logo__studio--black">Studio</span></a
+        <a class="logo" href="./index.html"
+          >Web<span class="logo__studio logo__studio--black">Studio</span></a
+        >
+        <div class="header__button">
+          <button
+            type="button"
+            class="menu-toggle"
+            js-open-menu
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
+            <svg class="header__hamburger" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__display">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li>
+                <a href="index.html">Agencja</a>
+              </li>
+              <li>
+                <a
+                  class="header__active"
+                  style="color: #2196f3"
+                  href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
 
-          <div class="header__menu-container">
-            <svg class="header__hamburger" width="24" height="16">
-          <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
+          <div class="header__contacts">
+            <a href="mailto:info@devstudio.com">
+              <svg class="header__icon" 1056 34 width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+            <a href="tel:+48111111111">
+              <svg class="header__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
           </div>
-          <ul class="header__list">
-            <li>
-              <a  href="index.html"
-                >Agencja</a
-              >
-            </li>
-            <li><a style="color: #2196f3" class="header__active" href="portfolio.html">Portfolio</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
-        </nav>
-        <div class="header__contacts">
-          <a href="mailto:info@devstudio.com">
-            <svg class="header__icon" 1056 34 width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-          <a href="tel:+48111111111">
-            <svg class="header__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111</a
-          >
         </div>
       </div>
     </header>
@@ -69,8 +84,8 @@
           </div>
           <div>
             <ul class="portfolio">
-              <li class="portfolio__element" >
-                <figure >
+              <li class="portfolio__element">
+                <figure>
                   <div class="portfolio__position">
                     <div class="portfolio__technocrack-container">
                       <p class="portfolio__technocrack">
@@ -80,7 +95,8 @@
                         niezabezpieczone serwery konkurencji
                       </p>
                     </div>
-                    <img class="portfolio__image"
+                    <img
+                      class="portfolio__image"
                       src="images/technocrack.jpg"
                       alt="screen ze zdjęciami ludzi"
                       width="370"
@@ -93,7 +109,7 @@
                   </figcaption>
                 </figure>
               </li>
-              <li class="portfolio__element" >
+              <li class="portfolio__element">
                 <figure>
                   <div class="portfolio__position">
                     <div class="portfolio__technocrack-container">
@@ -104,7 +120,8 @@
                         niezabezpieczone serwery konkurencji
                       </p>
                     </div>
-                    <img class="portfolio__image"
+                    <img
+                      class="portfolio__image"
                       src="images/new-orlean.jpg"
                       alt="grafika meczu ew rlean z golden star"
                       width="370"
@@ -112,7 +129,9 @@
                     />
                   </div>
                   <figcaption class="portfolio__figcaption">
-                    <span class="portfolio__upper-text">Grafika New Orlean vs Golden Star</span>
+                    <span class="portfolio__upper-text"
+                      >Grafika New Orlean vs Golden Star</span
+                    >
                     <span class="portfolio__lower">Dizajn</span>
                   </figcaption>
                 </figure>
@@ -128,7 +147,8 @@
                         niezabezpieczone serwery konkurencji
                       </p>
                     </div>
-                    <img class="portfolio__image"
+                    <img
+                      class="portfolio__image"
                       src="images/seafood-restaurant.jpg"
                       alt="logo restauracji the seafood"
                       width="370"
@@ -136,7 +156,9 @@
                     />
                   </div>
                   <figcaption class="portfolio__figcaption">
-                    <span class="portfolio__upper-text">Restauracja Seafood</span>
+                    <span class="portfolio__upper-text"
+                      >Restauracja Seafood</span
+                    >
                     <span class="portfolio__lower">Aplikacja</span>
                   </figcaption>
                 </figure>
@@ -152,7 +174,8 @@
                         niezabezpieczone serwery konkurencji
                       </p>
                     </div>
-                    <img class="portfolio__image"
+                    <img
+                      class="portfolio__image"
                       src="images/prime-project.jpg"
                       alt="słuchawki nauszne"
                       width="370"
@@ -176,7 +199,8 @@
                         niezabezpieczone serwery konkurencji
                       </p>
                     </div>
-                    <img class="portfolio__image"
+                    <img
+                      class="portfolio__image"
                       src="images/project-boxes.jpg"
                       alt="dwa kolorowe pudełka"
                       width="370"
@@ -189,7 +213,7 @@
                   </figcaption>
                 </figure>
               </li>
-              <li class="portfolio__element"> 
+              <li class="portfolio__element">
                 <figure>
                   <div class="portfolio__position">
                     <div class="portfolio__technocrack-container">
@@ -200,7 +224,8 @@
                         niezabezpieczone serwery konkurencji
                       </p>
                     </div>
-                    <img class="portfolio__image"
+                    <img
+                      class="portfolio__image"
                       src="images/no-borders.jpg"
                       alt="monitor ze stroną no borders"
                       width="370"
@@ -208,7 +233,9 @@
                     />
                   </div>
                   <figcaption class="portfolio__figcaption">
-                    <span class="portfolio__upper-text">Inspiration has no borders</span>
+                    <span class="portfolio__upper-text"
+                      >Inspiration has no borders</span
+                    >
                     <span class="portfolio__lower">Strona internetowa</span>
                   </figcaption>
                 </figure>
@@ -224,7 +251,8 @@
                         niezabezpieczone serwery konkurencji
                       </p>
                     </div>
-                    <img class="portfolio__image"
+                    <img
+                      class="portfolio__image"
                       src="images/magazine.jpg"
                       alt="otarty magazyn z artykułem limited edition"
                       width="370"
@@ -232,7 +260,9 @@
                     />
                   </div>
                   <figcaption class="portfolio__figcaption">
-                    <span class="portfolio__upper-text">Magazyn Limited Editio</span>
+                    <span class="portfolio__upper-text"
+                      >Magazyn Limited Editio</span
+                    >
                     <span class="portfolio__lower">Dizajn</span>
                   </figcaption>
                 </figure>
@@ -248,7 +278,8 @@
                         niezabezpieczone serwery konkurencji
                       </p>
                     </div>
-                    <img class="portfolio__image"
+                    <img
+                      class="portfolio__image"
                       src="images/project-lab.jpg"
                       alt="etykieta label tag"
                       width="370"
@@ -272,7 +303,8 @@
                         niezabezpieczone serwery konkurencji
                       </p>
                     </div>
-                    <img class="portfolio__image"
+                    <img
+                      class="portfolio__image"
                       src="images/growing-business.jpg"
                       alt="laptop ze stroną growing business"
                       width="370"
@@ -320,7 +352,11 @@
           <ul class="ending__join-us-links">
             <li tabindex="0" class="ending__list-element">
               <a tabindex="-1" href="#" target="_blank"></a>
-              <svg class="team__item-social team__item-social--white" width="44" height="44">
+              <svg
+                class="team__item-social team__item-social--white"
+                width="44"
+                height="44"
+              >
                 <use
                   href="./images/icons.svg#icon-instagram"
                   x="12"
@@ -332,7 +368,11 @@
             </li>
             <li tabindex="0" class="ending__list-element">
               <a tabindex="-1" href="#" target="_blank"></a>
-              <svg class="team__item-social team__item-social--white" width="44" height="44">
+              <svg
+                class="team__item-social team__item-social--white"
+                width="44"
+                height="44"
+              >
                 <use
                   href="./images/icons.svg#icon-twitter"
                   x="12"
@@ -344,7 +384,11 @@
             </li>
             <li tabindex="0" class="ending__list-element">
               <a tabindex="-1" href="#" target="_blank"></a>
-              <svg class="team__item-social team__item-social--white" width="44" height="44">
+              <svg
+                class="team__item-social team__item-social--white"
+                width="44"
+                height="44"
+              >
                 <use
                   href="./images/icons.svg#icon-facebook"
                   x="12"
@@ -356,7 +400,11 @@
             </li>
             <li tabindex="0" class="ending__list-element">
               <a tabindex="-1" href="#" target="_blank"></a>
-              <svg class="team__item-social team__item-social--white" width="44" height="44">
+              <svg
+                class="team__item-social team__item-social--white"
+                width="44"
+                height="44"
+              >
                 <use
                   href="./images/icons.svg#icon-linkedin2"
                   x="12"
