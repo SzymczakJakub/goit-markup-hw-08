@@ -161,7 +161,13 @@
     }
   }
 
-  
+  @media (min-width:1200px){
+    .modal{
+      &__box{width:44%;
+        margin:auto;
+      }
+    }
+  }
   
   
   
