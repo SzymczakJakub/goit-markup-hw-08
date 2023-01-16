@@ -1,14 +1,17 @@
 .articles {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    
-    &__svg-lorem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+
+  &__svg-lorem {
     background-color: $iconsLorembg;
     border-radius: 4px;
     margin-bottom: 30px;
+    width: 100%;
   }
-  &__topic{
+  &__topic {
+    text-align: center;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -24,6 +27,31 @@
     letter-spacing: 0, 03em;
     color: $grey;
     line-height: 24px;
+    width: 100%;
   }
+  &__list {
+    width: 100%;
   }
-  
+}
+
+@media (min-width: 760px) and (max-width: 1199px) {
+  .articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    &__list {
+      width: 46%;
+    }
+    &__svg-lorem {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .articles {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
