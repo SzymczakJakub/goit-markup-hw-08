@@ -51,30 +51,6 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 759px) {
-
-  .filter {
-    flex-wrap: wrap;
-    margin-right: 73px;
-    justify-content: left;
-  }
-  .portfolio {
-    padding: 0;
-    &__element {
-      width: 100%;
-    }
-    &__technocrack-container {
-      width: 100%;
-      height: 294px;
-    }
-    &__technocrack {
-      height: 100%;
-      padding: 77px 24px;
-    }
-    &__image {
-      width: 100%;
-    }
-  }
-
   .ending {
     &__divs {
       flex-direction: column;
@@ -148,15 +124,6 @@ body {
 }
 
 @media (min-width: 760px) and (max-width: 1199px) {
-
-  .portfolio{
-    flex-wrap: wrap;
-    padding-bottom: 0;
-    &__element{
-      width: 46%
-    }
-
-  }
 .ending{
   &__footer{
     text-align: center;
@@ -180,9 +147,7 @@ body {
     text-align: center;
   }
 }
-.mobile{
-  display: none;
-}
+
 }
 
 
