@@ -2,101 +2,136 @@
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
-
-
-&__wrapper {
+  &__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-family: $fontMain;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-}
-    &__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;}
+  &__display {
+    display: none;
   }
-    
-    &__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 46px;
-    
-    & a {
-    font-family: $fontMain;
-    font-weight: 500;
-    letter-spacing: 0, 02em;
-    color: $black;
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    display: block;
-  }
-  
-  & a:hover::after,
-  & a:focus::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 45px;
-    width: 100%;
-    height: 4px;
-    background-color: $blue;
-    border-radius: 2px;
-  }
-  & a:hover,
-  & a:focus {
-    color: $blue;
-  }
-  }
-  &__active::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 45px;
-    width: 100%;
-    height: 4px;
-    background-color: $blue;
-    border-radius: 2px;
-  }
-  
-  
-  &__contacts {
-    display: flex;
-    gap: 50px;
-    
-    & a {
-    color: $grey;
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  & a:hover,
-  & a:focus {
-    color: $blue;
-  }
-  }
-  &__icon {
-    fill: currentColor;
-    margin-right: 10px;
+  &__hamburger {
     vertical-align: middle;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover,
-  &:focus {
-    fill: $blue;
+    fill: $black;
+    &:hover {
+      fill: $blue;
+      cursor: pointer;
+    }
   }
-  }
-  
   }
 
+  @media (min-width:760px){
+    .header{
+      padding: 20px 0;
+    &__display{
+      display: flex;
+      gap:101px;
+      margin-left:auto
+    }
+     &__wrapper{
+        font-family: $fontMain;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 46px;
+      
+      & a {
+      font-family: $fontMain;
+      font-weight: 500;
+      letter-spacing: 0, 02em;
+      color: $black;
+      text-decoration: none;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      display: block;
+    }
+    
+    & a:hover::after,
+    & a:focus::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 45px;
+      width: 100%;
+      height: 4px;
+      background-color: $blue;
+      border-radius: 2px;
+    }
+    & a:hover,
+    & a:focus {
+      color: $blue;
+    }
+    }
+    &__active::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 45px;
+      width: 100%;
+      height: 4px;
+      background-color: $blue;
+      border-radius: 2px;
+    }
+    &__contacts{
+      display:flex;
+      flex-direction: column;
+      gap:10px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__contacts {
+      display: flex;
+     
+      
+      & a {
+      color: $grey;
+      text-decoration: none;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    & a:hover,
+    & a:focus {
+      color: $blue;
+    }
+    }
+    &__icon {
+      fill: currentColor;
+      margin-right: 10px;
+      vertical-align: middle;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+      &:hover,
+    &:focus {
+      fill: $blue;
+    }
+    }
+    
+    }
+  }
   
   
-  
-  
+  @media (min-width:1199px){
+    .header{padding-top: 24px;
+      padding-bottom: 25px;
+      &__contacts{
+        flex-direction: row;
+        font-size: 14px;
+        gap:30px;
+      }
+    &__wrapper{
+      margin: 0 auto
+    }
+    }
+  }
   
   
   
