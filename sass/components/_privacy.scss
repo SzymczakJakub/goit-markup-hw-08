@@ -2,16 +2,17 @@
     font-family: $fontMain;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: $grey;
-    margin-left: 14px;
+    margin-left: 0;
     margin-top:20px;
     position: relative;
     display:flex;
     align-items: center;
     gap:7px;
+    text-align: left;
 
     & a {
         color: $blue;
@@ -53,7 +54,7 @@
         text-align: center;
         cursor: pointer;
         align-content: center;
-        margin-left: 124px;
+        text-align: center;
       }
   }
   
