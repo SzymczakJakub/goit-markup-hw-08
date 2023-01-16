@@ -15,15 +15,15 @@
 
   &__pictures {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     gap: 30px;
-
-    & figure {
-      font-size: 0;
-    }
+  }
+  &__photo {
+    width: 100%;
+    height: 460px;
   }
   &__head {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-align: center;
@@ -57,8 +57,8 @@
   &__list-links {
     display: flex;
     gap: 10px;
-    margin-left: 32px;
-    margin-top: 16px;
+    width: 206px;
+      margin: 0 auto;
   }
   &__social-links {
     background-color: $white;
@@ -86,6 +86,42 @@
     &--white {
       vertical-align: middle;
       fill: $white;
+    }
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1199px){
+  .team{
+    &__pictures{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__list{
+      width: 46%;
+    }
+    &__photo {
+      height: 374px;
+    }
+
+  }
+}
+
+@media(min-width:1200px){
+  .team{
+    &__head{
+      font-size: 36px;
+    }
+    &__pictures{
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+    &__list{
+      width: 24%;
+    }
+    &__photo {
+      height: 260px;
     }
   }
 }
