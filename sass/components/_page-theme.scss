@@ -19,13 +19,15 @@
     background-size: 1600px 600px;
     
     &__topic {
-    font-size: 44px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 26px;
+      line-height: 42px;
+      width: 365px;
+      padding-top: 58px;
     font-weight: 900;
-    line-height: 60px;
     letter-spacing: 0.06em;
     color: $white;
-    width: 696px;
-    margin: 106px 252px 0 252px;
   }
   
   &__button {
@@ -37,7 +39,7 @@
     border: none;
     cursor: pointer;
     margin-top: 30px;
-    margin-bottom: 106px;
+    margin-bottom: 58px;
     cursor: pointer;
     color: $white;
     background-color: $blue;
@@ -48,4 +50,17 @@
   }
   }
   
-  
+  @media (min-width:1199px){
+    .page-theme{
+&__topic{
+  font-size: 44px;
+  line-height: 60px;
+  width: 696px;
+  padding:0;
+    margin: 106px 252px 0 252px;
+}
+&__button{
+  margin-bottom: 106px;
+}
+    }
+  }

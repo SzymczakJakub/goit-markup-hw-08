@@ -51,19 +51,7 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 759px) {
-  .menu-toggle {
-    border: none;
-    background-color: $white;
-  }
-  .page-theme {
-    &__topic {
-      margin: 0 auto;
-      text-align: center;
-      font-size: 26px;
-      line-height: 42px;
-      width: 365px;
-    }
-  }
+  
   .articles {
     flex-direction: column;
     &__svg-lorem {
@@ -210,23 +198,6 @@ body {
 }
 
 @media (min-width: 760px) and (max-width: 1199px) {
-  
-  .menu-toggle{
-    display: none;
-  }
-  .page-theme{
-    &__topic{margin: 0 auto;
-      text-align: center;
-      font-size: 26px;
-      line-height: 42px;
-      width: 365px;
-      padding-top: 58px;
-
-    }
-    &__button{
-      margin-bottom: 58px;
-    }
-  }
   .articles{flex-wrap: wrap;
     gap:30px;
     justify-content: space-between;

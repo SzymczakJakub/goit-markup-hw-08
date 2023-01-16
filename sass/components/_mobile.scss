@@ -28,6 +28,9 @@
         font-family: $fontMain;
         font-weight: 500;
         font-size: 40px;
+        &:hover{
+          color:$blue;
+        }
       }
       &__contacts {
         padding-top: 302px;
@@ -64,7 +67,10 @@
         padding-left: 10px;
       }
     }
-
+.menu-toggle {
+    border: none;
+    background-color: $white;
+  }
     @media (min-width: 760px) {
         .menu-toggle {
           display: none;
@@ -84,3 +90,4 @@
           transform: translateX(0);
         }
       }
+      
