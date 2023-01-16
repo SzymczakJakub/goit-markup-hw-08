@@ -51,67 +51,7 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 759px) {
-  .ending {
-    &__divs {
-      flex-direction: column;
-      text-align: center;
-    }
-    &__footer {
-      width: 100%;
-    }
-    &__join-us {
-      width: 100%;
-    }
-    &__join-us-links {
-      width: 206px;
-      margin: 0 auto;
-      padding-top: 20px;
-    }
-    &__form {
-      width: 100%;
-    }
-    &__newsletter-flex {
-      flex-direction: column;
-    }
-    &__newsletter {
-      width: 100%;
-    }
-  }
 
-  .modal {
-    &__header {
-      text-align: center;
-      width: 100%;
-    }
-    &__form {
-      width: 82%;
-      margin: 0 auto;
-    }
-    &__box {
-      margin-left: auto;
-      margin-right: auto;
-      width: 90%;
-    }
-    &__personal-details {
-      width: 100%;
-      margin: 0;
-    }
-    &__input {
-      width: 100%;
-    }
-    &__input-comment {
-      width: 100%;
-    }
-    &__comment {
-      width: 100%;
-    }
-    &__comment-name {
-      width: 100%;
-    }
-    &_icon-position {
-      width: 100%;
-    }
-  }
   .privacy {
     font-size: 12px;
     line-height: 14px;
@@ -123,34 +63,8 @@ body {
   }
 }
 
-@media (min-width: 760px) and (max-width: 1199px) {
-.ending{
-  &__footer{
-    text-align: center;
-  }
-  &__divs{
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  &__newsletter-flex{
-    flex-direction: column;
-  }
-  &__form{
-    width: 60%;
-    text-align: center;
-  }
-  &__newsletter{
-    width: 100%;
-  }
-  &__join-us{
-    text-align: center;
-  }
-}
 
-}
-
-
+ 
 
 
 
