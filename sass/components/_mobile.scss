@@ -3,6 +3,9 @@
       position: relative;
       padding: 40px;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       &__close {
         background-color: $white;
         border: none;
@@ -33,7 +36,7 @@
         }
       }
       &__contacts {
-        padding-top: 302px;
+        
         display: flex;
         flex-direction: column;
         gap: 32px;
