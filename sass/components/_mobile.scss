@@ -55,6 +55,8 @@
       &__socials {
         margin-top: 64px;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
         gap: 10px;
         color: $blue;
         margin-bottom: 48px;

@@ -23,7 +23,6 @@
       text-align: center;
       font-size: 26px;
       line-height: 42px;
-      width: 365px;
       padding-top: 58px;
     font-weight: 900;
     letter-spacing: 0.06em;
@@ -49,7 +48,13 @@
     border-radius: 4px;
   }
   }
-  
+  @media (min-width:760px){
+    .page-theme{
+      &__topic{
+        width:365px;
+      }
+    }
+  }
   @media (min-width:1199px){
     .page-theme{
 &__topic{
