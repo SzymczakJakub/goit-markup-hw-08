@@ -29,6 +29,11 @@ body {
   color: var(--black);
   font-family: $fontMain;
 }
+img{
+  width:100%;
+  height:auto;
+  display:block;
+}
 
 .container {
   max-width: 480px;
