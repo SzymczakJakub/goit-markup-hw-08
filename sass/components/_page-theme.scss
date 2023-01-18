@@ -48,14 +48,14 @@
     border-radius: 4px;
   }
   }
-  @media (min-width:760px){
+  @media (min-width:768px){
     .page-theme{
       &__topic{
         width:365px;
       }
     }
   }
-  @media (min-width:1199px){
+  @media (min-width:1200px){
     .page-theme{
 &__topic{
   font-size: 44px;
