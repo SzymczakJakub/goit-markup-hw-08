@@ -22,7 +22,7 @@
   }
   
   &__box {
-    width: 46.67%;
+    max-width: 46.67%;
     cursor: pointer;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -52,7 +52,7 @@
   
   @media (min-width: 768px) {
     .clients{
-      &__box{width: 30%;
+      &__box{max-width: 30%;
       }
     }}
   @media(min-width:1200px){

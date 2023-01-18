@@ -1,7 +1,7 @@
 
     .mobile {
       position: relative;
-      padding: 40px;
+      padding: 48px 40px;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -18,7 +18,6 @@
         }
       }
       &__nav {
-        padding-top: 48px;
         display: flex;
         flex-direction: column;
         gap: 36px;
@@ -33,6 +32,9 @@
         font-size: 40px;
         &:hover{
           color:$blue;
+        }
+        &--blue{
+          color:$blue
         }
       }
       &__contacts {
@@ -62,7 +64,7 @@
         justify-content: left;
         gap: 10px;
         color: $blue;
-        margin-bottom: 48px;
+        
         font-family: $fontMain;
         font-weight: 500;
         font-size: 18px;
